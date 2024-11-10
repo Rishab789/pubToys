@@ -19,7 +19,7 @@ cloudinary.cloudinaryConnect();
 
 app.use(
   cors({
-    origin: "http://localhost:1234", // Allow only your frontend's origin
+    origin: ["http://localhost:1234", "https://your-netlify-site.netlify.app"], // Allow only your frontend's origin
     methods: "GET, POST, PUT, DELETE",
     credentials: true,
   })
