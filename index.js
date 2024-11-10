@@ -21,7 +21,7 @@ app.use(
   cors({
     origin: [
       "https://unique-nougat-a35281.netlify.app",
-      "http://localhost:1234",
+      "http://localhost:3000",
     ],
     // Allow only your frontend's origin
     methods: "GET, POST, PUT, DELETE",
