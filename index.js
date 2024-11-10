@@ -34,7 +34,7 @@ app.use("/api/v1", postFile);
 const connectWithDB = require("./config/database");
 connectWithDB();
 
-app.listen(8000, (req, res) => {
+app.listen(PORT, (req, res) => {
   console.log("server is running on port 8000");
 });
 
