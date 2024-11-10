@@ -19,10 +19,8 @@ cloudinary.cloudinaryConnect();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:1234",
-      "https://unique-nougat-a35281.netlify.app/",
-    ], // Allow only your frontend's origin
+    origin: "https://unique-nougat-a35281.netlify.app/",
+    // Allow only your frontend's origin
     methods: "GET, POST, PUT, DELETE",
     credentials: true,
   })
