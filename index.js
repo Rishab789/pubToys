@@ -19,10 +19,7 @@ cloudinary.cloudinaryConnect();
 
 app.use(
   cors({
-    origin: [
-      "https://unique-nougat-a35281.netlify.app",
-      "http://localhost:3000",
-    ],
+    origin: ["https://www.pubtoys.store", "http://localhost:3000"],
     // Allow only your frontend's origin
     methods: "GET, POST, PUT, DELETE",
     credentials: true,
