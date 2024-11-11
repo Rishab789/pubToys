@@ -8,6 +8,9 @@ const toysShema = new mongoose.Schema({
   imageUrl: {
     type: String,
   },
+  link: {
+    type: String,
+  },
 });
 
 module.exports = mongoose.model("Post", toysShema);

@@ -2,10 +2,11 @@ const Post = require("../model/postToys");
 
 exports.postFile = async (req, res) => {
   try {
-    const { title, imageUrl } = req.body;
+    const { title, imageUrl, link } = req.body;
     const post = new Post({
       title,
       imageUrl,
+      link,
     });
 
     const savedPost = await post.save();
