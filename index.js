@@ -19,7 +19,11 @@ cloudinary.cloudinaryConnect();
 
 app.use(
   cors({
-    origin: ["https://www.pubtoys.store", "http://localhost:3000"],
+    origin: [
+      "https://www.pubtoys.store",
+      "http://localhost:3000",
+      "http://localhost:1234",
+    ],
     // Allow only your frontend's origin
     methods: "GET, POST, PUT, DELETE",
     credentials: true,
